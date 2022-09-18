@@ -81,5 +81,5 @@ int main(void)
     glfwDestroyWindow(window);
     glfwTerminate();
 
-    exit(EXIT_SUCCESS);
+     exit(EXIT_SUCCESS);
 }
