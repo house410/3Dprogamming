@@ -296,6 +296,17 @@ public:
 		}
 		return savevec;
 	}
+
+	vec3 operator*(vec3& ref)
+	{
+		vec3 savevec(new float[3]{ 0,0,0 });
+		savevec.vec[0] = vec[1] * ref.vec[2] - vec[2] * ref.vec[1];
+		savevec.vec[1] = vec[2] * ref.vec[0] - vec[0] * ref.vec[2];
+		savevec.vec[2] = vec[0] * ref.vec[1] - vec[1] * ref.vec[0];
+
+		return savevec;
+	}
+
 	friend vec3 operator*(mat3& ref, const vec3 ref2);
 
 };

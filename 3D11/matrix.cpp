@@ -8,11 +8,13 @@ int main(void) {
 	vec3 v(new float[3] { 1, 1, 1 });//vec°ª
 	vec3 v1(new float[3] {1, 1, 1});
 	vec3 sum2(new float[3] { 1, 1, 1 });
+	vec3 b(new float[3] {3, 5, 1});
+	vec3 r(new float[3] {0, 0, 0});
 	vec3 p(new float[3]);//¹è¿­ Ãâ·ÂÇÏ´Â°÷
 
 	vec4 v2(new float[4] {3, 5, 1, 1});
 	vec4 v3(new float[4] {1, 1, 1, 1});
-	vec3 sum3(new float[3] { 1, 1, 1 });
+	vec4 sum3(new float[3] { 1, 1, 1 });
 	vec4 p1(new float[4]);//¹è¿­ Ãâ·ÂÇÏ´Â°÷
 
 	vec1x3 v4(new float[1][3] {1,1,1});
@@ -138,13 +140,12 @@ int main(void) {
 	//}
 
 
-	//mat4 a(new float[4][4]); //4x4 Çà·Ä°ö
-	//a = Scale1 * Translate1;
+	//a1 = Scale1 * Translate1;//4x4Çà·Ä°ö
 	//for (int i = 0; i < 4; i++)
 	//{
 	//	for (int j = 0; j < 4; j++)
 	//	{
-	//		std::cout << a.mat[i][j];
+	//		std::cout << a1.mat[i][j];
 	//		std::cout << " ";
 	//	}
 	//	std::cout << std::endl;
@@ -212,6 +213,13 @@ int main(void) {
 	//	}
 	//	std::cout << std::endl;
 	//}
+
+//r = v * b;
+//for (int i = 0; i < 3; i++)
+//{
+//	std::cout << r.vec[i];
+//	std::cout << " ";
+//}
 
 
 	//p = v1 + v; //3x1º¤ÅÍ°£ µ¡¼À
@@ -297,7 +305,7 @@ int main(void) {
 
 	//}
 
-	//sum3 = v * 2; //4x1º¤ÅÍ¿Í»ó¼ö °ö¼À
+	//sum3 = v3 * 2; //4x1º¤ÅÍ¿Í»ó¼ö °ö¼À
 	//for (int i = 0; i < 4; i++)
 	//{
 	//	std::cout << sum3.vec[i];
